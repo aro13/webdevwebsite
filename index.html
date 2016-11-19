@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://
+		maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/
+		bootstrap.min.css">
+		<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery
+		.min.js"></script>
+		<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstr
+		ap.min.js"></script>
+		<style>
+			body {
+				background-color: #C3EEF2
+			}
+			h1 {
+				/* Rules for headers */
+				color: #444;
+				font-size: 30px;
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+			}
+			p {
+				/* Rules for paragraphs */
+				color: black;
+				font-size: 14px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			ul {
+				color: black
+				font-size: 14px
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.priority {
+				text-align: center;
+				color: #082A6E;
+				font-size: 14px
+			}
+			#mainheader {
+				text-align: center;
+				color: #082A6E
+				font-size: 45px
+				font-family; Arial, Helvetica, sans-serif;
+			}
+			#copyright {
+				text-align: center;
+				color: #082A6E
+				font-size: 10px;
+				font-family: Arial, Helvetica, sans-serif;
+		</style>	
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" datatoggle="
+					collapse" data-target="#navbar" aria-expanded="false" ariacontrols="
+					navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Cows in the Cloud</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#features">Overview</a></li>
+						<li><a href="#How it works">Features</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<header>
+			<div>
+				<br>
+			</div>
+			<div class="container">
+				<div class="jumbotron"
+					<h1 id="mainheader" style="font-size: 45px"> Cows in the Cloud
+					</h1>
+					<p class="priority">
+						Ridiculously expensive milk flown across the world and delivered to your door every morning. 
+					</p>
+					<p>
+						<a class="btn btn-lg btn-success" href="#orderpage"
+							role="button">Order Now</a>
+					</p>
+				</div>
+			</div>
+		</header>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					I am the first element in the carousel.
+				</div>
+				<div class="item">
+					I am the second element in the carousel.
+				</div>
+				<div class="item">
+					I am the third element in the carousel.
+				</div>
+				<div class="item">
+					I am the fourth element in the carousel.
+				</div>
+			</div>
+		</div>
+		</div>
+			<script type="text/javascript">
+
+				$(document).ready(function() {
+					$("#myCarousel").carousel({interval: 1500});
+				});
+			</script>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2> Milk </h2>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>Your Milk</li>
+						<li>Your Cow</li>
+						<li><span style="color:green">Sustainability</span></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<p> We have a bunch of other stuff too...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h2> Other Details </h2>
+				</div>
+				<div class="col-md-4">
+					Nutritional information
+				</div>
+				<div class="col-md-4">
+					Animal welfare
+				</div>
+				<br>
+			</div>
+		</div>
+		<div>
+			<a href="http://www.google.com" target="_blank">
+				Go to Google
+			</a><br>
+		</div>
+		<div>
+			<button type="button"
+			onclick="document.getElementById('myparagraph').innerHTML =
+			'Kapow!!!'">Click</button>
+		</div>
+		<div>
+			<p id=myparagraph>
+				Default text appears here.
+			</p>
+		</div>
+		<div>
+			<p id=prettyparagraph>
+				I am writing a few sentences here because we need to have something here. La la la.
+			</p>
+		</div>
+		<div>
+			<button type="button" onclick="applyStyling()">Make it pretty!</button>
+			<script>
+				function applyStyling() {
+					var paragraph = document.getElementById("prettyparagraph");
+					paragraph.style.color = "green"
+					paragraph.style.fontSize = "29px";
+					paragraph.style.fontWeight = "700";
+				}
+			</script>
+		</div>
+		<div>
+			<input id="numericInput" type="number">
+			<p id="result"></p>
+			<button type="button" onclick="testInput()">Test input</button>
+			<script>
+				function testInput() {
+					// Create variable to store test result
+					var text;
+					// Get the value of the input field with id="numb"
+					var x = document.getElementById("numericInput").value;
+					if (isNaN(x) || x < 0 || x > 99) {
+						text = "Wrong input";
+					} else {
+						text = "Correct input";
+					}
+					// Display result
+					document.getElementById("result").innerHTML = text;
+				}
+			</script>
+		</div>
+		<div>
+			<br>
+			<img id="cowimage" src="http://img05.deviantart.net/9908/i/2009/343/3/8/purple_cow_on_a_cloud_by_vanmethod.png">
+			<br>
+			<!--<img src="C:\Users\onsag\Desktop\Web Dev\Cowstanding.jpg"-->
+		</div>
+		<div>
+			<p id=copyright>
+				Copyright Cows in the Cloud 2016
+			</p>
+		</div>
+	</body>
+</html>
